@@ -8,8 +8,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-
-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -83,6 +81,7 @@ class Coletar :
                     nome = ''
                     preco = ''
                     falsoProdutos += 1
+                    
                 print(nome)
                 print(preco)
 
@@ -93,8 +92,7 @@ class Coletar :
 
         with open(f'./DadosColetados/Geral_{nome_produto}.txt', 'w', encoding="UTF-8") as geral :
             geral.write(f'Preço Minimo: {preco_min} \nPreço Maximo: {preco_max}\n')
-            geral.write(f'Total de produtos : {totalProdutos-falsoProdutos}\n')
-            geral.write(f'Total de produtos sobre preferencias : {totalProdutosPref}\n')
+            geral.write(f'Total de produtos : {totalProdutos-falsoProdutos} \nTotal de produtos sobre preferencias : {totalProdutosPref}\n')
             geral.write(f'Total de paginas vistas : {pagina-1}')
 
 
@@ -108,3 +106,5 @@ class Coletar :
 
 
       
+
+

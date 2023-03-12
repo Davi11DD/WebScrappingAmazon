@@ -1,15 +1,35 @@
 SITE : https://www.amazon.com.br/
 WebScrapping no site da AMAZON
-LINGUAGEM : Python / BIBLIOTECAS : SELENIUM
+LINGUAGEM : Python / BIBLIOTECAS : SELENIUM, BEAUTIFULSOUP
 
-Para rodar: Main.py
-    - Digite o nome do produto
-    - Digite o preço minimo e maximo dos produtos a serem coletados
+Executar Versao_2/Main.py
 
-// O código percorre todas as paginas do produto site da Amazon e coleta os dados de cada produto
+Informar > 
+    - Produto a ser pesquisado
+    - Preço Mínimo
+    - Preço Máximo
+    - Número de páginas a serem coletadas
+
+retorno > ./Versao_2/DadosColetados  >  
+    - /*nomeDoProduto.txt : Nome,preço e link de cada produto encontrado sobre as preferências de preço mínimo e máximo 
+    - /Geral_*nomeDoProduto.txt : Informações complementares sobre a coleta
+
+Mais >
+    Obter acesso a uma List de nomes, precos e links : o 'Navegar.py' a classe, possui as funções >
+    - getNomes()
+    - getPrecos()
+    - getLinks()
 
 
-Dados Salvos em './DadosColetados/"nome_do_produto.txt"'
-Informações extras em './DadosColetados/"Geral_nome_do_produto.txt"'
 
-# versão  2.0
+
+(RODAR A VERSÃO 2)
+# versão  2.0 
+
+
+
+
+
+
+
+
